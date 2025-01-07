@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>Individual Assignment</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Verdana;
+				background: url("image/background.png") no-repeat center center fixed;
+				background-size: cover; /* Makes the image cover the whole page */
+				height: 118vh; /* Sets the height to fill the viewport */
+			}
+		</style>
+	</head>
+	<body bgcolor="#d6d7d8">
+		<marquee bgcolor="#d6d7d8" style="font-family: Verdana;">
+			<font color="black">𐙚˙✧˖°📷 ༘ ⋆｡ ˚Welcome to Reez to Earth's Digital Diary 𐙚˙✧˖°📷 ༘ ⋆｡ ˚</font>
+		</marquee>
+
+		<table border="0" align="center" width="1200" bgcolor="#d6d7d8" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			<h1 align="center" style="color:white;">✰✮ REEZ TO EARTH'S DIGITAL DIARY ✰✮</h1>
+			<tr height="50">
+				<td width="200" align="left"><img src="Image/nikicon.png" width="100" height="100" hspace="10" vspace="10"></td>
+				<td width="50" align="center"><a href="index.html" style="text-decoration: none"><font color="black"><b>Home</b></font></a></td>
+				<td width="50" align="center"><a href="about-me.html" style="text-decoration: none"><font color="black"><b>About Me</b></font></a></td>
+				<td width="50" align="center"><a href="education.html" style="text-decoration: none"><font color="black"><b>Education</b></font></a></td>
+				<td width="50" align="center"><a href="hobby.html" style="text-decoration: none"><font color="black"><b>Hobby</b></font></a></td>
+				<td width="50" align="center"><a href="gallery.html" style="text-decoration: none"><font color="black"><b>Gallery</b></font></a></td>
+				<td width="50" align="center"><a href="contact-me.html" style="text-decoration: none"><font color="black"><b>Contact Me</b></font></a></td>
+			</tr>
+			
+			<tr>
+				<td colspan="7">
+					<table border="0" align="center">
+						<tr height="200" align="center">
+							<td width="300">✮⋆˙HELLO!✮⋆˙</td>
+							<td width="10"></td>
+							<td width="300">
+								<div class="slideshow-container">
+									<div class="mySlides fade">
+										<div class="numbertext">1 / 3</div>
+										<img src="Image/picture2.png" width="550" height="500">
+									</div>
+									<div class="mySlides fade">
+										<div class="numbertext">2 / 3</div>
+										<img src="Image/picture3.png" width="550" height="500">
+									</div>
+									<div class="mySlides fade">
+										<div class="numbertext">3 / 3</div>
+										<img src="Image/picture1.png" width="550" height="500">
+									</div>
+								</div>
+								<br>
+								<div style="text-align:center">
+									<span class="dot"></span>
+									<span class="dot"></span>
+									<span class="dot"></span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		
+		<p style="text-align:center; color:black; position: absolute; bottom: 10px; left: 0; width: 100%;">&copy; 2025 [Nik Hareez]. All rights reserved</p>
+
+		<marquee behavior="alternate" direction="down" style="height:300px;">
+			<img src="Image/star.gif" alt="Bouncing GIF" width="100">
+			<img src="Image/star.gif" alt="Bouncing GIF" width="100">
+			<img src="Image/star.gif" alt="Bouncing GIF" width="100">
+			<img src="image/star.gif" alt="Bouncing GIF" width="100">
+			<img src="Image/star.gif" alt="Bouncing GIF" width="100">
+			<img src="Image/star.gif" alt="Bouncing GIF" width="100">
+			<img src="Image/star.gif" alt="Bouncing GIF" width="100">
+			<img src="Image/star.gif" alt="Bouncing GIF" width="100">
+		</marquee>
+
+		<script>
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) { slideIndex = 1; }
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+		</script>
+	</body>
+</html>
